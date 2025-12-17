@@ -1,10 +1,9 @@
 
-export const TodoList = ({todosFromServer, usersFromServer}) => {
+export const TodoList = ({todos}) => {
   return (
      <section className="TodoList">
-    {todosFromServer.map(todo =>
+    {todos.map(todo =>
     <TodoInfo
-      users={usersFromServer}
       key={todo.id}
       todo={todo}
     />)}
